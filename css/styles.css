@@ -15,17 +15,40 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.button-container {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
     display: flex;
     flex-direction: row;
     border: 10px solid black;
+    height: 600px;
+    width: 600px;
+    background-color: white;
 
 }
+.row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-.gridItem {
-    padding: 1em;
+.grid-item {
+    /* padding: 1em; */
     border: 1px solid black;
     text-align: center;
+    flex: 1;
 }
 
 footer {

@@ -14,9 +14,16 @@
 <body>
     <header><h1 class="title">Etch a Sketch</h1></header>
     <main>
-        <div class="container"></div>
+        <div class="button-container">
+            <button onclick="changeGridSize()">Grid Size</button>
+            <button id="black" onclick="changeColorMode(this.id)">Black Mode</button>
+            <button id="rainbow" onclick="changeColorMode(this.id)">Rainbow Mode</button>
+            <button id="white" onclick="changeColorMode(this.id)">Erase Mode</button>
+            <button onclick="resetGrid()">Reset</button>
+        </div>
+        <div class="grid-container"></div>
     </main>
-    <footer><a href="https://github.com/DustinYochim">Copyright © Dustin Yochim</a></footer>
+    <footer><a href="https://github.com/DustinYochim">Copyright © 2023 Dustin Yochim</a></footer>
     
     <script src="./js/script.js" ></script>
 </body>
