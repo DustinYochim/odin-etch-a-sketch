@@ -15,11 +15,11 @@
     <header><h1 class="title">Etch a Sketch</h1></header>
     <main>
         <div class="button-container">
-            <button onclick="changeGridSize()">Grid Size</button>
+            <button id="grid-size" onclick="changeGridSize()">Grid Size</button>
             <button id="black" onclick="changeColorMode(this.id)">Black Mode</button>
             <button id="rainbow" onclick="changeColorMode(this.id)">Rainbow Mode</button>
             <button id="white" onclick="changeColorMode(this.id)">Erase Mode</button>
-            <button onclick="resetGrid()">Reset</button>
+            <button id="reset" onclick="resetGrid()">Reset</button>
         </div>
         <div class="grid-container"></div>
     </main>

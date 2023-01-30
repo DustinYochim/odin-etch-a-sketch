@@ -33,6 +33,9 @@ function destroyGrid() {
 function changeGridSize() {
     destroyGrid();
     gridSize = prompt('Enter a new size for the grid between 2 - 100.');
+    while ( gridSize < 2 || gridSize > 100) {
+        gridSize = prompt('New grid size must be between 2 and 100.');
+    }
     buildGrid();
     addListeners();
 }
