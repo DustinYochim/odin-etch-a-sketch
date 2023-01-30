@@ -8,8 +8,14 @@ for (let rows = 0; rows < grid_size; rows++) {
     container.appendChild(row);
     for (let square = 0; square < grid_size; square++) {
         const square = document.createElement('div');
-        square.classList.add('grid-item');
+        square.classList.add('gridItem');
         row.appendChild(square);
     }
 }
 
+const gridItems = document.querySelectorAll('.gridItem');
+gridItems.forEach((gridItem) => {
+    gridItem.addEventListener('mouseover', () => {
+        gridItem.setAttribute('style', 'background: black;');
+    });
+});
